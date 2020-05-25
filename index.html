@@ -8,9 +8,91 @@
     </title>
     <link href="css/style.css" rel="stylesheet" />
   </head>
-  <!-- Online offline, browser compatability,  -->
+  <!-- Online offline, browser compatability, no javascript enabled -->
   <body>
     <h1 class="main-heading">List of html elements to check cross browser rendering</h1>
+
+    <h2 class="sub-heading">Form elements:</h2>
+    <span class="head-el">button element:</span>
+    <button name="button">Click the button</button>
+    <!-- input type button, form element-->
+    <span class="head-el">datalist element:</span>
+    <input list="browsers" id="myBrowser" name="myBrowser" />
+    <datalist id="browsers">
+      <option value="Chrome"> </option>
+      <option value="Firefox"> </option>
+      <option value="Internet Explorer"> </option>
+      <option value="Opera"> </option>
+      <option value="Safari"> </option>
+      <option value="Microsoft Edge"> </option>
+    </datalist>
+
+    <span class="head-el">fieldset element:</span>
+    <fieldset>
+      <legend>Choose your favorite monster</legend>
+      <input type="radio" id="kraken" name="monster" />
+      <label for="kraken">Kraken</label><br />
+
+      <input type="radio" id="sasquatch" name="monster" />
+      <label for="sasquatch">Sasquatch</label><br />
+
+      <input type="radio" id="mothman" name="monster" />
+      <label for="mothman">Mothman</label>
+    </fieldset>
+
+    <h3 class="sub-3-heading">Input types:</h3>
+    <span class="head-el">disabled:</span>
+    <input type="text" name="dis" disabled />
+    <span class="head-el">text:</span>
+    <input type="text" name="one" />
+    <span class="head-el">number:</span>
+    <input type="number" name="number" />
+    <span class="head-el">button:</span>
+    <input type="button" name="two" value="Click the Button" />
+    <span class="head-el">checkbox:</span>
+    <input type="checkbox" id="scales" name="scales" checked />
+    <label for="scales">Scales</label>
+    <input type="checkbox" id="horns" name="horns" />
+    <label for="horns">Horns</label>
+    <span class="head-el">color:</span>
+    <input type="color" name="color" />
+    <span class="head-el">date:</span>
+    <input type="date" name="date" />
+    <span class="head-el">datetime local:</span>
+    <input type="datetime-local" name="datetime-local" />
+    <span class="head-el">email:</span>
+    <input type="email" name="email" />
+    <span class="head-el">file:</span>
+    <input type="file" name="file" />
+    <span class="head-el">hidden:</span>
+    <input type="hidden" name="hidden" />
+    <span class="head-el">image:</span>
+    <input type="image" alt="Login" width="100" height="30" src="images/login-button.png" />
+    <span class="head-el">month:</span>
+    <input type="month" name="month" />
+    <span class="head-el">password:</span>
+    <input type="password" name="password" />
+    <span class="head-el">radio:</span>
+    <input type="radio" id="huey" name="drone" value="huey" checked />
+    <label for="huey">Huey</label>
+    <input type="radio" id="dewey" name="drone" value="dewey" />
+    <label for="dewey">Dewey</label>
+    <span class="head-el">range:</span>
+    <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="50" />
+    <span class="head-el">reset:</span>
+    <input type="reset" value="Reset" />
+    <span class="head-el">search:</span>
+    <input type="search" name="search" />
+    <span class="head-el">submit:</span>
+    <input type="submit" value="Click to Submit" />
+    <span class="head-el">tel:</span>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+    <span class="head-el">time:</span>
+    <input type="time" name="time" />
+    <span class="head-el">url:</span>
+    <input type="url" name="url" placeholder="https://example.com" pattern="https://.*" />
+    <span class="head-el">week:</span>
+    <input type="week" name="week" />
 
     <h2 class="sub-heading">Inline Elements:</h2>
     <span class="head-el">a element:</span>
@@ -44,6 +126,197 @@
       In html 5, what was previously called <em>block-level</em> content is now called
       <em>flow</em> content.
     </span>
+    <span class="head-el">em element:</span>
+    <span>
+      The Latin phrase <i>Veni, vidi, vici</i> is often mentioned in music, art, and literature.
+    </span>
+    <span class="head-el">kbd element:</span>
+    <span> Terminal magic press <kbd>Ctrl</kbd> + <kbd>r</kbd></span>
+    <span class="head-el">mark element:</span>
+    <span>Mark my <mark>words</mark></span>
+    <span class="head-el">q element:</span>
+    <span>The <q>Inline Quotation</q> element</span>
+    <span class="head-el">s element:</span>
+    <s>Strike me through.</s>
+    <span class="head-el">samp element:</span>
+    <samp>Keyboard not found, Press F1 to continue. Ouch!!!</samp>
+    <span class="head-el">small element:</span>
+    <small>This whole sentence is in small letters.</small>
+    <span class="head-el">span element:</span>
+    <span>Some text inside span</span>
+    <span class="head-el">strong element:</span>
+    <span><strong>Important:</strong> Before proceeding, make sure you add plenty of butter.</span>
+    <span class="head-el">sub element:</span>
+    <span>C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub></span>
+    <span class="head-el">sup element:</span>
+    <span>a<sup>2</sup>+ b<sup>2</sup> = c<sup>2</sup></span>
+    <span class="head-el">time element:</span>
+    <time datetime="2018-07-07T20:00:00">20:00</time>
+    <span class="head-el">u element:</span>
+    <span>This sentence has <u class="spelling">wrnogly</u> spelled word.</span>
+    <span class="head-el">var element:</span>
+    <var>l</var> × <var>w</var> × <var>h</var>
+    <span class="head-el">wbr element:</span>
+    <span>Reallylongword<wbr />wbronlyeffect<wbr />setting<wbr />width</span>
+    <span class="head-el">rb, rp, rt elements:</span>
+    <!-- prettier-ignore -->
+    <ruby>
+      <rb>漢<rb>字
+      <rp>(</rp><rt>kan<rt>ji<rp>)</rp>
+    </ruby>
+    <span class="head-el">ruby, rtc elements:</span>
+    <!-- prettier-ignore -->
+    <ruby>
+      <rbc>
+        <rb>旧</rb><rt>jiù</rt>
+        <rb>金</rb><rt>jīn</rt>
+        <rb>山</rb><rt>shān</rt>
+      </rbc>
+      <rtc>San Francisco</rtc>
+    </ruby>
+
+    <h2 class="sub-heading">Special Inline Elements:</h2>
+    <span class="head-el">audio element:</span>
+    <audio controls src="audios/t-rex-roar.mp3">
+      Your browser does not support the
+      <code>audio</code> element.
+    </audio>
+    <span class="head-el">img element:</span>
+    <img src="images/clock-demo-400px.png" width="150px" alt="Clock" />
+    <span class="head-el">video, track elements:</span>
+    <video controls width="250" src="videos/friday.mp4">
+      <track default kind="captions" srclang="en" src="videos/friday.vtt" />
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+    <span class="head-el">embed element:</span>
+    <embed type="video/webm" src="videos/flower.webm" width="250" height="200" title="Flower" />
+
+    <span class="head-el">map, area elements:</span>
+    <img src="images/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379" />
+    <map name="workmap">
+      <area
+        shape="rect"
+        coords="34,44,270,350"
+        alt="Computer"
+        href="https://en.wikipedia.org/wiki/Computer"
+        target="_blank"
+      />
+      <area
+        shape="rect"
+        coords="290,172,333,250"
+        alt="Phone"
+        href="https://en.wikipedia.org/wiki/Telephone"
+        target="_blank"
+      />
+      <area
+        shape="circle"
+        coords="337,300,44"
+        alt="Cup of coffee"
+        href="https://en.wikipedia.org/wiki/Coffee"
+        target="_blank"
+      />
+    </map>
+    <span class="head-el">Iframe element:</span>
+    <iframe title="Current page" width="300" height="200" src="/"> </iframe>
+    <span class="head-el">Object, param elements(pdf):</span>
+    <object type="application/pdf" data="pdfs/sample.pdf" width="250" height="200">
+      <param name="foo" value="bar" />
+    </object>
+    <span class="head-el">Canvas element:</span>
+    <canvas id="canvas" width="150" height="150">
+      An alternative text describing what your canvas displays.
+    </canvas>
+    <span class="head-el">Picture, Source elements:</span>
+    <picture>
+      <source srcset="images/surfer-240-200.jpg" media="(min-width: 800px)" />
+      <img src="images/surfer-240-200.jpg" alt="surfer" />
+    </picture>
+    <span class="head-el">noscript element:</span>
+    <noscript>
+      Javascript Disabled!
+    </noscript>
+    <span>Javascript Enabled!</span>
+    <span class="head-el">del, insert element:</span>
+    <del>text deleted</del> <ins>text inserted</ins>
+
+    <h2 class="sub-heading">Table Elements:</h2>
+
+    <span class="head-el">table with caption, tr, th, td elements:</span>
+    <table>
+      <caption>
+        Example Caption
+      </caption>
+      <tr>
+        <th>Login</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>user1</td>
+        <td>user1@sample.com</td>
+      </tr>
+      <tr>
+        <td>user2</td>
+        <td>user2@sample.com</td>
+      </tr>
+    </table>
+
+    <span class="head-el">table with col, colgroup elements:</span>
+    <table>
+      <colgroup>
+        <col />
+        <col span="2" class="batman" />
+        <col span="2" class="flash" />
+      </colgroup>
+      <tr>
+        <td></td>
+        <th scope="col">Batman</th>
+        <th scope="col">Robin</th>
+        <th scope="col">The Flash</th>
+        <th scope="col">Kid Flash</th>
+      </tr>
+      <tr>
+        <th scope="row">Skill</th>
+        <td>Smarts</td>
+        <td>Dex, acrobat</td>
+        <td>Super speed</td>
+        <td>Super speed</td>
+      </tr>
+    </table>
+
+    <span class="head-el">table with thead, tbody elements:</span>
+    <table>
+      <thead>
+        <tr>
+          <th>Student ID</th>
+          <th>Name</th>
+          <th>Major</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3741255</td>
+          <td>Jones, Martha</td>
+          <td>Computer Science</td>
+        </tr>
+        <tr>
+          <td>3971244</td>
+          <td>Nim, Victor</td>
+          <td>Russian Literature</td>
+        </tr>
+        <tr>
+          <td>4100332</td>
+          <td>Petrov, Alexandra</td>
+          <td>Astrophysics</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Footer</th>
+          <td>Hello world</td>
+        </tr>
+      </tfoot>
+    </table>
+
     <h2 class="sub-heading">Block Elements:</h2>
     <span class="head-el">Address element:</span>
     <address>
@@ -183,5 +456,7 @@
                      ||----w |
                      ||     ||
     </pre>
+
+    <script src="./js/style.js"></script>
   </body>
 </html>
