@@ -80,7 +80,7 @@ While finally reading the docs, I was surprised to see few things I did not know
 
 Mdn docs are really so good, Credits to them.
 
-I guess I could say this is an **experiment with html element**.
+I guess I could say this is an **experiment with html elements**.
 
 Feel free to share your thoughts and feedback.
 
