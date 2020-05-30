@@ -14,3 +14,49 @@
 .head-el {
   color: #f44336;
 }
+
+.section-visualize {
+  width: 100%;
+  margin: 0 auto;
+}
+.visualize-content {
+  border: solid 1px #c0c0c0;
+  padding: 8px;
+  margin: 12px;
+  background-color: #f0f0e9;
+}
+
+.visualize-content-head {
+  border: solid 1px #c0c0c0;
+  padding: 3px;
+  margin: 5px;
+  background-color: #fff;
+  font-weight: bold;
+  color: red;
+}
+
+.visualize-float {
+  width: 300px;
+  float: left;
+}
+
+.visualize-display-block {
+  display: block;
+  height: 100px;
+  border: dotted 1px red;
+  background-color: white;
+}
+
+.visualize-display-inline {
+  display: inline;
+  height: 100px;
+  border: dotted 1px red;
+  background-color: white;
+}
+
+.visualize-display-inline-block {
+  display: inline-block;
+  height: 100px;
+  border: dotted 1px red;
+  background-color: white;
+}

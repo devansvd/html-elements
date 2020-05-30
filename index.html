@@ -12,6 +12,83 @@
   <body>
     <h1 class="main-heading">List of html elements to check cross browser rendering</h1>
 
+    <h2 class="sub-heading">Input types:</h2>
+
+    <span class="head-el">text:</span>
+    <input type="text" name="one" />
+
+    <span class="head-el">disabled text:</span>
+    <input type="text" name="dis" disabled />
+
+    <span class="head-el">number:</span>
+    <input type="number" name="number" />
+
+    <span class="head-el">button:</span>
+    <input type="button" name="two" value="Click the Button" />
+
+    <span class="head-el">checkbox:</span>
+    <input type="checkbox" id="scales" name="scales" checked />
+    <label for="scales">Scales</label>
+    <input type="checkbox" id="horns" name="horns" />
+    <label for="horns">Horns</label>
+
+    <span class="head-el">color:</span>
+    <input type="color" name="color" />
+
+    <span class="head-el">date:</span>
+    <input type="date" name="date" />
+
+    <span class="head-el">datetime local:</span>
+    <input type="datetime-local" name="datetime-local" />
+
+    <span class="head-el">email:</span>
+    <input type="email" name="email" />
+
+    <span class="head-el">file:</span>
+    <input type="file" name="file" />
+
+    <span class="head-el">hidden:</span>
+    <input type="hidden" name="hidden" />
+
+    <span class="head-el">month:</span>
+    <input type="month" name="month" />
+
+    <span class="head-el">password:</span>
+    <input type="password" name="password" />
+
+    <span class="head-el">radio:</span>
+    <input type="radio" id="huey" name="drone" value="huey" checked />
+    <label for="huey">Huey</label>
+    <input type="radio" id="dewey" name="drone" value="dewey" />
+    <label for="dewey">Dewey</label>
+
+    <span class="head-el">range:</span>
+    <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="50" />
+
+    <span class="head-el">reset:</span>
+    <input type="reset" value="Reset" />
+
+    <span class="head-el">search:</span>
+    <input type="search" name="search" />
+
+    <span class="head-el">submit:</span>
+    <input type="submit" value="Click to Submit" />
+
+    <span class="head-el">tel:</span>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+
+    <span class="head-el">time:</span>
+    <input type="time" name="time" />
+
+    <span class="head-el">url:</span>
+    <input type="url" name="url" placeholder="https://example.com" pattern="https://.*" />
+
+    <span class="head-el">week:</span>
+    <input type="week" name="week" />
+
+    <span class="head-el">image:</span>
+    <input type="image" alt="Login" width="100" height="30" src="images/login-button.png" />
+
     <h2 class="sub-heading">Form elements:</h2>
     <span class="head-el">button element:</span>
     <button name="button">Click the button</button>
@@ -40,130 +117,156 @@
       <label for="mothman">Mothman</label>
     </fieldset>
 
-    <h3 class="sub-3-heading">Input types:</h3>
-    <span class="head-el">disabled:</span>
-    <input type="text" name="dis" disabled />
-    <span class="head-el">text:</span>
-    <input type="text" name="one" />
-    <span class="head-el">number:</span>
-    <input type="number" name="number" />
-    <span class="head-el">button:</span>
-    <input type="button" name="two" value="Click the Button" />
-    <span class="head-el">checkbox:</span>
-    <input type="checkbox" id="scales" name="scales" checked />
-    <label for="scales">Scales</label>
-    <input type="checkbox" id="horns" name="horns" />
-    <label for="horns">Horns</label>
-    <span class="head-el">color:</span>
-    <input type="color" name="color" />
-    <span class="head-el">date:</span>
-    <input type="date" name="date" />
-    <span class="head-el">datetime local:</span>
-    <input type="datetime-local" name="datetime-local" />
-    <span class="head-el">email:</span>
-    <input type="email" name="email" />
-    <span class="head-el">file:</span>
-    <input type="file" name="file" />
-    <span class="head-el">hidden:</span>
-    <input type="hidden" name="hidden" />
-    <span class="head-el">image:</span>
-    <input type="image" alt="Login" width="100" height="30" src="images/login-button.png" />
-    <span class="head-el">month:</span>
-    <input type="month" name="month" />
-    <span class="head-el">password:</span>
-    <input type="password" name="password" />
-    <span class="head-el">radio:</span>
-    <input type="radio" id="huey" name="drone" value="huey" checked />
-    <label for="huey">Huey</label>
-    <input type="radio" id="dewey" name="drone" value="dewey" />
-    <label for="dewey">Dewey</label>
-    <span class="head-el">range:</span>
-    <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="50" />
-    <span class="head-el">reset:</span>
-    <input type="reset" value="Reset" />
-    <span class="head-el">search:</span>
-    <input type="search" name="search" />
-    <span class="head-el">submit:</span>
-    <input type="submit" value="Click to Submit" />
-    <span class="head-el">tel:</span>
-    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
-    <span class="head-el">time:</span>
-    <input type="time" name="time" />
-    <span class="head-el">url:</span>
-    <input type="url" name="url" placeholder="https://example.com" pattern="https://.*" />
-    <span class="head-el">week:</span>
-    <input type="week" name="week" />
+    <span class="head-el">label element:</span>
+    <label>Do you like cheese?</label>
+
+    <span class="head-el">legend element:</span>
+    <legend>Choose your favorite monster</legend>
+
+    <span class="head-el">form element:</span>
+    <form action="" method="get">
+      Form element represents a document section containing interactive controls for submitting
+      information.
+    </form>
+
+    <span class="head-el">textarea element:</span>
+    <textarea rows="5" cols="100">
+    textarea element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form
+    </textarea>
+
+    <span class="head-el">meter element:</span>
+    <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">
+      At 50/100
+    </meter>
+
+    <span class="head-el">select, options elements:</span>
+    <select>
+      <option>Tyrannosaurus</option>
+      <option>Velociraptor</option>
+      <option>Deinonychus</option>
+      <option>Diplodocus</option>
+      <option>Saltasaurus</option>
+      <option>Apatosaurus</option>
+    </select>
+
+    <span class="head-el">select with optgroup elements:</span>
+    <select>
+      <optgroup label="Theropods">
+        <option>Tyrannosaurus</option>
+        <option>Velociraptor</option>
+        <option>Deinonychus</option>
+      </optgroup>
+      <optgroup label="Sauropods">
+        <option>Diplodocus</option>
+        <option>Saltasaurus</option>
+        <option>Apatosaurus</option>
+      </optgroup>
+    </select>
+
+    <span class="head-el">output element:</span>
+    <output>Output = 60</output>
+
+    <span class="head-el">progress element:</span>
+    <progress max="100" value="70"> 70% </progress>
 
     <h2 class="sub-heading">Inline Elements:</h2>
+
     <span class="head-el">a element:</span>
     <a href="https://www.netlify.com">
       Netlify
     </a>
+
     <span class="head-el">abbr element:</span>
     <abbr title="Laugh Out Loud">LOL</abbr>
+
     <span class="head-el">b element:</span>
     <span>b element is known as <b>Bring attention to element</b> </span>
+
     <span class="head-el">bdi element:</span>
     <bdi>الرجل القوي إيان</bdi>
+
     <span class="head-el">bdo element:</span>
     <bdo dir="rtl">This text will go right to left.</bdo>
+
     <span class="head-el">br element:</span>
     <br />
+
     <span class="head-el">cite element:</span>
     <cite>
       Nineteen Eighty-Four by George Orwell (Part 1, Chapter 1)
     </cite>
+
     <span class="head-el">code element:</span>
     <code>[1,2,3,4].push()</code>
+
     <span class="head-el">data element:</span>
     <data value="Ketchup">Mini Ketchup</data>
+
     <span class="head-el">dfn element:</span>
     <span>
       The (<dfn>&lt;dfn&gt;</dfn>) - definition.
     </span>
+
     <span class="head-el">em element:</span>
     <span>
       In html 5, what was previously called <em>block-level</em> content is now called
       <em>flow</em> content.
     </span>
+
     <span class="head-el">em element:</span>
     <span>
       The Latin phrase <i>Veni, vidi, vici</i> is often mentioned in music, art, and literature.
     </span>
+
     <span class="head-el">kbd element:</span>
     <span> Terminal magic press <kbd>Ctrl</kbd> + <kbd>r</kbd></span>
+
     <span class="head-el">mark element:</span>
     <span>Mark my <mark>words</mark></span>
+
     <span class="head-el">q element:</span>
     <span>The <q>Inline Quotation</q> element</span>
+
     <span class="head-el">s element:</span>
     <s>Strike me through.</s>
+
     <span class="head-el">samp element:</span>
     <samp>Keyboard not found, Press F1 to continue. Ouch!!!</samp>
+
     <span class="head-el">small element:</span>
     <small>This whole sentence is in small letters.</small>
+
     <span class="head-el">span element:</span>
     <span>Some text inside span</span>
+
     <span class="head-el">strong element:</span>
     <span><strong>Important:</strong> Before proceeding, make sure you add plenty of butter.</span>
+
     <span class="head-el">sub element:</span>
     <span>C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub></span>
+
     <span class="head-el">sup element:</span>
     <span>a<sup>2</sup>+ b<sup>2</sup> = c<sup>2</sup></span>
+
     <span class="head-el">time element:</span>
     <time datetime="2018-07-07T20:00:00">20:00</time>
+
     <span class="head-el">u element:</span>
     <span>This sentence has <u class="spelling">wrnogly</u> spelled word.</span>
+
     <span class="head-el">var element:</span>
     <var>l</var> × <var>w</var> × <var>h</var>
+
     <span class="head-el">wbr element:</span>
     <span>Reallylongword<wbr />wbronlyeffect<wbr />setting<wbr />width</span>
+
     <span class="head-el">rb, rp, rt elements:</span>
     <!-- prettier-ignore -->
     <ruby>
       <rb>漢<rb>字
       <rp>(</rp><rt>kan<rt>ji<rp>)</rp>
     </ruby>
+
     <span class="head-el">ruby, rtc elements:</span>
     <!-- prettier-ignore -->
     <ruby>
@@ -176,18 +279,22 @@
     </ruby>
 
     <h2 class="sub-heading">Special Inline Elements:</h2>
+
     <span class="head-el">audio element:</span>
     <audio controls src="audios/t-rex-roar.mp3">
       Your browser does not support the
       <code>audio</code> element.
     </audio>
+
     <span class="head-el">img element:</span>
     <img src="images/clock-demo-400px.png" width="150px" alt="Clock" />
+
     <span class="head-el">video, track elements:</span>
     <video controls width="250" src="videos/friday.mp4">
       <track default kind="captions" srclang="en" src="videos/friday.vtt" />
       Sorry, your browser doesn't support embedded videos.
     </video>
+
     <span class="head-el">embed element:</span>
     <embed type="video/webm" src="videos/flower.webm" width="250" height="200" title="Flower" />
 
@@ -216,106 +323,34 @@
         target="_blank"
       />
     </map>
+
     <span class="head-el">Iframe element:</span>
     <iframe title="Current page" width="300" height="200" src="/"> </iframe>
+
     <span class="head-el">Object, param elements(pdf):</span>
     <object type="application/pdf" data="pdfs/sample.pdf" width="250" height="200">
       <param name="foo" value="bar" />
     </object>
+
     <span class="head-el">Canvas element:</span>
     <canvas id="canvas" width="150" height="150">
       An alternative text describing what your canvas displays.
     </canvas>
+
     <span class="head-el">Picture, Source elements:</span>
     <picture>
       <source srcset="images/surfer-240-200.jpg" media="(min-width: 800px)" />
       <img src="images/surfer-240-200.jpg" alt="surfer" />
     </picture>
+
     <span class="head-el">noscript element:</span>
     <noscript>
       Javascript Disabled!
     </noscript>
     <span>Javascript Enabled!</span>
-    <span class="head-el">del, insert element:</span>
+
+    <span class="head-el">del, ins element:</span>
     <del>text deleted</del> <ins>text inserted</ins>
-
-    <h2 class="sub-heading">Table Elements:</h2>
-
-    <span class="head-el">table with caption, tr, th, td elements:</span>
-    <table>
-      <caption>
-        Example Caption
-      </caption>
-      <tr>
-        <th>Login</th>
-        <th>Email</th>
-      </tr>
-      <tr>
-        <td>user1</td>
-        <td>user1@sample.com</td>
-      </tr>
-      <tr>
-        <td>user2</td>
-        <td>user2@sample.com</td>
-      </tr>
-    </table>
-
-    <span class="head-el">table with col, colgroup elements:</span>
-    <table>
-      <colgroup>
-        <col />
-        <col span="2" class="batman" />
-        <col span="2" class="flash" />
-      </colgroup>
-      <tr>
-        <td></td>
-        <th scope="col">Batman</th>
-        <th scope="col">Robin</th>
-        <th scope="col">The Flash</th>
-        <th scope="col">Kid Flash</th>
-      </tr>
-      <tr>
-        <th scope="row">Skill</th>
-        <td>Smarts</td>
-        <td>Dex, acrobat</td>
-        <td>Super speed</td>
-        <td>Super speed</td>
-      </tr>
-    </table>
-
-    <span class="head-el">table with thead, tbody elements:</span>
-    <table>
-      <thead>
-        <tr>
-          <th>Student ID</th>
-          <th>Name</th>
-          <th>Major</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>3741255</td>
-          <td>Jones, Martha</td>
-          <td>Computer Science</td>
-        </tr>
-        <tr>
-          <td>3971244</td>
-          <td>Nim, Victor</td>
-          <td>Russian Literature</td>
-        </tr>
-        <tr>
-          <td>4100332</td>
-          <td>Petrov, Alexandra</td>
-          <td>Astrophysics</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <th scope="row">Footer</th>
-          <td>Hello world</td>
-        </tr>
-      </tfoot>
-    </table>
 
     <h2 class="sub-heading">Block Elements:</h2>
     <span class="head-el">Address element:</span>
@@ -456,6 +491,320 @@
                      ||----w |
                      ||     ||
     </pre>
+
+    <hr />
+
+    <h2 class="sub-heading">Interactive elements:</h2>
+    <span class="head-el">details, summary elements:</span>
+    <details>
+      <summary>System Requirements</summary>
+      Requires a computer running an operating system. The computer must have some memory and
+      ideally some kind of long-term storage. An input device as well as some form of output device
+      is recommended. details creates a disclosure widget in which information is visible only when
+      the widget is toggled into an "open" state. A summary or label can be provided using the
+      summary element.
+    </details>
+
+    <span class="head-el">menu element:</span>
+    <menu>
+      <menuitem>Action</menuitem>
+      <menuitem>Another action</menuitem>
+      <hr />
+      <menuitem>Separated action</menuitem>
+    </menu>
+
+    <span class="head-el">dialog element:</span>
+    <dialog open>
+      Grettings To everyone ! I'm a dialogue element with open attribute
+    </dialog>
+
+    <h2 class="sub-heading">web components:</h2>
+
+    <span class="head-el">slot element:</span>
+    <slot name="attributes">
+      Slot element—part of the Web Components technology suite—is a placeholder inside a web
+      component that you can fill with your own markup, which lets you create separate DOM trees and
+      present them together.
+    </slot>
+
+    <span class="head-el">template element (Can be rendered via js):</span>
+    <template>
+      element is a mechanism for holding HTML that is not to be rendered immediately when a page is
+      loaded but may be instantiated subsequently during runtime using JavaScript.
+    </template>
+
+    <h2 class="sub-heading">Deprecated elements:</h2>
+    <h3 class="sub-3-heading">
+      Intentionally not added elements - basefont, bgsound, command, content, dir, element, font,
+      frame, frameset, image, isindex, keygen, listing, menuitem, multicol, nextid, nobr, noembed,
+      noframes, plaintext, shadow, spacer, xmp
+    </h3>
+    <span class="head-el">acronym element:</span>
+    <acronym title="World Wide Web">WWW</acronym>
+
+    <span class="head-el">applet element:</span>
+    <applet code="game.class" align="left" archive="game.zip" height="250" width="350">
+      <param name="difficulty" value="easy" />
+      <b>Sorry, you need Java to play this game.</b>
+    </applet>
+
+    <span class="head-el">big element:</span>
+    <big>This whole sentence is in bigger letters.</big>
+
+    <span class="head-el">blink element:</span>
+    <blink>Why would somebody use this?</blink>
+
+    <span class="head-el">center element:</span>
+    <center>This text inside center element will be centered.</center>
+
+    <span class="head-el">marquee element:</span>
+    <marquee>This text will scroll from right to left</marquee>
+
+    <span class="head-el">marquee with behavior element:</span>
+    <marquee direction="down" width="250" height="200" behavior="alternate" style="border: solid;">
+      <marquee behavior="alternate">
+        This text will bounce
+      </marquee>
+    </marquee>
+
+    <span class="head-el">strike element:</span>
+    <strike>Today's Special: Salmon</strike>
+
+    <span class="head-el">tt element:</span>
+    <tt>
+      tt element creates inline text which is presented using the user agent's default monospace
+      font face.
+    </tt>
+
+    <h2 class="sub-heading">Table Elements:</h2>
+
+    <span class="head-el">table with caption, tr, th, td elements:</span>
+    <table>
+      <caption>
+        Example Caption
+      </caption>
+      <tr>
+        <th>Login</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>user1</td>
+        <td>user1@sample.com</td>
+      </tr>
+      <tr>
+        <td>user2</td>
+        <td>user2@sample.com</td>
+      </tr>
+    </table>
+
+    <span class="head-el">table with col, colgroup elements:</span>
+    <table>
+      <colgroup>
+        <col />
+        <col span="2" class="batman" />
+        <col span="2" class="flash" />
+      </colgroup>
+      <tr>
+        <td></td>
+        <th scope="col">Batman</th>
+        <th scope="col">Robin</th>
+        <th scope="col">The Flash</th>
+        <th scope="col">Kid Flash</th>
+      </tr>
+      <tr>
+        <th scope="row">Skill</th>
+        <td>Smarts</td>
+        <td>Dex, acrobat</td>
+        <td>Super speed</td>
+        <td>Super speed</td>
+      </tr>
+    </table>
+
+    <span class="head-el">table with thead, tbody elements:</span>
+    <table>
+      <thead>
+        <tr>
+          <th>Student ID</th>
+          <th>Name</th>
+          <th>Major</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3741255</td>
+          <td>Jones, Martha</td>
+          <td>Computer Science</td>
+        </tr>
+        <tr>
+          <td>3971244</td>
+          <td>Nim, Victor</td>
+          <td>Russian Literature</td>
+        </tr>
+        <tr>
+          <td>4100332</td>
+          <td>Petrov, Alexandra</td>
+          <td>Astrophysics</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Footer</th>
+          <td>Hello world</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <p style="text-align: center;">
+      =================================== THE END ============================================
+    </p>
+    <hr />
+
+    <h2 class="sub-heading">Useful Info:</h2>
+
+    <h3>
+      To vizualize Display Inline difference between (display block vs display inline vs display
+      inline-block) with height 100px
+    </h3>
+
+    <p>
+      <strong>Note:</strong> This will reveal where height is applied. Where it is not! :) Example
+      taken from
+      <a
+        target="_blank"
+        rel="noreferrer noopener"
+        href="https://stackoverflow.com/questions/8969381/what-is-the-difference-between-display-inline-and-display-inline-block"
+      >
+        https://stackoverflow.com/questions/8969381/what-is-the-difference-between-display-inline-and-display-inline-block
+      </a>
+    </p>
+
+    <section class="section-visualize">
+      <div class="visualize-content visualize-float">
+        <div class="visualize-content-head">display: block</div>
+        Ach, was muß man oft von bösen<br />
+        Kindern hören oder lesen!<br />
+        Wie zum Beispiel hier von diesen<br />
+        Welche <span class="visualize-display-block">Max und Moritz</span> hießen.<br />
+        Die, anstatt durch weise Lehren<br />
+        Sich zum Guten zu bekehren,<br />
+        Oftmals noch darüber lachten<br />
+        Und sich heimlich lustig machten.<br />
+      </div>
+      <div class="visualize-content visualize-float">
+        <div class="visualize-content-head">display: inline</div>
+        Ach, was muß man oft von bösen<br />
+        Kindern hören oder lesen!<br />
+        Wie zum Beispiel hier von diesen<br />
+        Welche <span class="visualize-display-inline">Max und Moritz</span> hießen.<br />
+        Die, anstatt durch weise Lehren<br />
+        Sich zum Guten zu bekehren,<br />
+        Oftmals noch darüber lachten<br />
+        Und sich heimlich lustig machten.<br />
+      </div>
+      <div class="visualize-content visualize-float">
+        <div class="visualize-content-head">display: inline-block</div>
+        Ach, was muß man oft von bösen<br />
+        Kindern hören oder lesen!<br />
+        Wie zum Beispiel hier von diesen<br />
+        Welche <span class="visualize-display-inline-block">Max und Moritz</span> hießen.<br />
+        Die, anstatt durch weise Lehren<br />
+        Sich zum Guten zu bekehren,<br />
+        Oftmals noch darüber lachten<br />
+        Und sich heimlich lustig machten.<br />
+      </div>
+    </section>
+
+    <h3 style="clear: both; color: red;">
+      Infact in Html5 spec, block element and inline block elements were removed, Instead Content
+      categories is introduced.
+    </h3>
+
+    <p>
+      Each element in HTML falls into zero or more categories that group elements with similar
+      characteristics together. The following broad categories are used in the html5 specification:
+    </p>
+
+    <ul>
+      <li>
+        <a href="https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content"
+          >Metadata content</a
+        >
+      </li>
+      <li>
+        <a href="https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content">
+          Flow content
+        </a>
+      </li>
+      <li>
+        <a href="https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content">
+          Sectioning content
+        </a>
+      </li>
+      <li>
+        <a href="https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content">
+          Heading content
+        </a>
+      </li>
+      <li>
+        <a href="https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content">
+          Phrasing content
+        </a>
+      </li>
+      <li>
+        <a href="https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content">
+          Embedded content
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Interactive content
+        </a>
+      </li>
+    </ul>
+
+    <p>
+      To vizualize which element grouped to which category, here is the nice svg take from
+      <a
+        href="https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content"
+        target="_blank"
+        rel="noreferrer noopener"
+        >html5 spec
+      </a>
+      (hover over the good stuff):
+    </p>
+
+    <object width="1000" height="288" data="./images/content-venn.svg"></object>
+
+    <h2 class="sub-heading">References:</h2>
+    <ul>
+      <li>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          https://developer.mozilla.org/en-US/docs/Web/HTML/Reference
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content
+        </a>
+      </li>
+      <li>
+        <a
+          target="_blank"
+          rel="noreferrer noopener"
+          href="https://stackoverflow.com/questions/8969381/what-is-the-difference-between-display-inline-and-display-inline-block"
+        >
+          https://stackoverflow.com/questions/8969381/what-is-the-difference-between-display-inline-and-display-inline-block
+        </a>
+      </li>
+    </ul>
 
     <script src="./js/style.js"></script>
   </body>
