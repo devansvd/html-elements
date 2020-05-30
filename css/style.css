@@ -135,3 +135,13 @@
 .visualize .slider.round:before {
   border-radius: 50%;
 }
+
+.js-disabled-alert {
+  background: red;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.03px;
+}
