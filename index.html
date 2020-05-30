@@ -10,7 +10,40 @@
   </head>
   <!-- Online offline, browser compatability, no javascript enabled -->
   <body>
-    <h1 class="main-heading">List of html elements to check cross browser rendering</h1>
+    <h1 class="main-heading">Html-5 elements - Vizualize Cross Browser Rendering</h1>
+
+    <p>
+      This is not suppose to be used as a reference(use
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        MDN
+      </a>
+      for that), intended to vizualize cross browser rendering of each elements Specifically, how
+      much space it occupies like marigin, padding, border. Intentionally each elements placed next
+      to each other(Span tag is occupied as their heading) to see if that specific element is
+      <strong>inline or block element</strong>.
+      <q>So don't think like page is not aligned properly, What the Hell ?</q>
+      <strong>No Additional Margin, Padding, Border is added in-between elements.</strong>
+      Grouping sub headings are fake to check their actual grouped section head to
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        MDN
+      </a>
+      or
+      <a
+        href="https://html.spec.whatwg.org/multipage/dom.html"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Html5 Spec.
+      </a>
+    </p>
 
     <h2 class="sub-heading">Input types:</h2>
 
@@ -85,9 +118,9 @@
 
     <span class="head-el">week:</span>
     <input type="week" name="week" />
-
+    <br />
     <span class="head-el">image:</span>
-    <input type="image" alt="Login" width="100" height="30" src="images/login-button.png" />
+    <input type="image" alt="Login" width="100" src="images/login-button.png" />
 
     <h2 class="sub-heading">Form elements:</h2>
     <span class="head-el">button element:</span>
@@ -130,7 +163,7 @@
     </form>
 
     <span class="head-el">textarea element:</span>
-    <textarea rows="5" cols="100">
+    <textarea rows="5">
     textarea element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form
     </textarea>
 
@@ -278,7 +311,7 @@
       <rtc>San Francisco</rtc>
     </ruby>
 
-    <h2 class="sub-heading">Special Inline Elements:</h2>
+    <h2 class="sub-heading">Special Elements:</h2>
 
     <span class="head-el">audio element:</span>
     <audio controls src="audios/t-rex-roar.mp3">
@@ -494,88 +527,6 @@
 
     <hr />
 
-    <h2 class="sub-heading">Interactive elements:</h2>
-    <span class="head-el">details, summary elements:</span>
-    <details>
-      <summary>System Requirements</summary>
-      Requires a computer running an operating system. The computer must have some memory and
-      ideally some kind of long-term storage. An input device as well as some form of output device
-      is recommended. details creates a disclosure widget in which information is visible only when
-      the widget is toggled into an "open" state. A summary or label can be provided using the
-      summary element.
-    </details>
-
-    <span class="head-el">menu element:</span>
-    <menu>
-      <menuitem>Action</menuitem>
-      <menuitem>Another action</menuitem>
-      <hr />
-      <menuitem>Separated action</menuitem>
-    </menu>
-
-    <span class="head-el">dialog element:</span>
-    <dialog open>
-      Grettings To everyone ! I'm a dialogue element with open attribute
-    </dialog>
-
-    <h2 class="sub-heading">web components:</h2>
-
-    <span class="head-el">slot element:</span>
-    <slot name="attributes">
-      Slot element—part of the Web Components technology suite—is a placeholder inside a web
-      component that you can fill with your own markup, which lets you create separate DOM trees and
-      present them together.
-    </slot>
-
-    <span class="head-el">template element (Can be rendered via js):</span>
-    <template>
-      element is a mechanism for holding HTML that is not to be rendered immediately when a page is
-      loaded but may be instantiated subsequently during runtime using JavaScript.
-    </template>
-
-    <h2 class="sub-heading">Deprecated elements:</h2>
-    <h3 class="sub-3-heading">
-      Intentionally not added elements - basefont, bgsound, command, content, dir, element, font,
-      frame, frameset, image, isindex, keygen, listing, menuitem, multicol, nextid, nobr, noembed,
-      noframes, plaintext, shadow, spacer, xmp
-    </h3>
-    <span class="head-el">acronym element:</span>
-    <acronym title="World Wide Web">WWW</acronym>
-
-    <span class="head-el">applet element:</span>
-    <applet code="game.class" align="left" archive="game.zip" height="250" width="350">
-      <param name="difficulty" value="easy" />
-      <b>Sorry, you need Java to play this game.</b>
-    </applet>
-
-    <span class="head-el">big element:</span>
-    <big>This whole sentence is in bigger letters.</big>
-
-    <span class="head-el">blink element:</span>
-    <blink>Why would somebody use this?</blink>
-
-    <span class="head-el">center element:</span>
-    <center>This text inside center element will be centered.</center>
-
-    <span class="head-el">marquee element:</span>
-    <marquee>This text will scroll from right to left</marquee>
-
-    <span class="head-el">marquee with behavior element:</span>
-    <marquee direction="down" width="250" height="200" behavior="alternate" style="border: solid;">
-      <marquee behavior="alternate">
-        This text will bounce
-      </marquee>
-    </marquee>
-
-    <span class="head-el">strike element:</span>
-    <strike>Today's Special: Salmon</strike>
-
-    <span class="head-el">tt element:</span>
-    <tt>
-      tt element creates inline text which is presented using the user agent's default monospace
-      font face.
-    </tt>
-
     <h2 class="sub-heading">Table Elements:</h2>
 
     <span class="head-el">table with caption, tr, th, td elements:</span>
@@ -653,6 +604,89 @@
         </tr>
       </tfoot>
     </table>
+
+    <h2 class="sub-heading">Interactive elements:</h2>
+
+    <span class="head-el">details, summary elements:</span>
+    <details>
+      <summary>System Requirements</summary>
+      Requires a computer running an operating system. The computer must have some memory and
+      ideally some kind of long-term storage. An input device as well as some form of output device
+      is recommended. details creates a disclosure widget in which information is visible only when
+      the widget is toggled into an "open" state. A summary or label can be provided using the
+      summary element.
+    </details>
+
+    <span class="head-el">menu element:</span>
+    <menu>
+      <menuitem>Action</menuitem>
+      <menuitem>Another action</menuitem>
+      <hr />
+      <menuitem>Separated action</menuitem>
+    </menu>
+
+    <span class="head-el">dialog element:</span>
+    <dialog open>
+      Grettings To everyone ! I'm a dialogue element with open attribute
+    </dialog>
+
+    <h2 class="sub-heading">Web components:</h2>
+
+    <span class="head-el">slot element:</span>
+    <slot name="attributes">
+      Slot element—part of the Web Components technology suite—is a placeholder inside a web
+      component that you can fill with your own markup, which lets you create separate DOM trees and
+      present them together.
+    </slot>
+
+    <span class="head-el">template element (Can be rendered via js):</span>
+    <template>
+      element is a mechanism for holding HTML that is not to be rendered immediately when a page is
+      loaded but may be instantiated subsequently during runtime using JavaScript.
+    </template>
+
+    <h2 class="sub-heading">Deprecated elements:</h2>
+    <h3 class="sub-3-heading">
+      Intentionally not added elements - basefont, bgsound, command, content, dir, element, font,
+      frame, frameset, image, isindex, keygen, listing, menuitem, multicol, nextid, nobr, noembed,
+      noframes, plaintext, shadow, spacer, xmp
+    </h3>
+    <span class="head-el">acronym element:</span>
+    <acronym title="World Wide Web">WWW</acronym>
+
+    <span class="head-el">applet element:</span>
+    <applet code="game.class" align="left" archive="game.zip" height="250" width="350">
+      <param name="difficulty" value="easy" />
+      <b>Sorry, you need Java to play this game.</b>
+    </applet>
+
+    <span class="head-el">big element:</span>
+    <big>This whole sentence is in bigger letters.</big>
+
+    <span class="head-el">blink element:</span>
+    <blink>Why would somebody use this?</blink>
+
+    <span class="head-el">center element:</span>
+    <center>This text inside center element will be centered.</center>
+
+    <span class="head-el">marquee element:</span>
+    <marquee>This text will scroll from right to left</marquee>
+
+    <span class="head-el">marquee with behavior element:</span>
+    <marquee direction="down" width="250" height="200" behavior="alternate" style="border: solid;">
+      <marquee behavior="alternate">
+        This text will bounce
+      </marquee>
+    </marquee>
+
+    <span class="head-el">strike element:</span>
+    <strike>Today's Special: Salmon</strike>
+
+    <span class="head-el">tt element:</span>
+    <tt>
+      tt element creates inline text which is presented using the user agent's default monospace
+      font face.
+    </tt>
 
     <p style="text-align: center;">
       =================================== THE END ============================================

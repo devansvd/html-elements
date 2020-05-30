@@ -4,6 +4,8 @@
 .main-heading {
   text-align: center;
   font-size: 1.5em;
+  color: blue;
+  font-style: italic;
 }
 .sub-heading {
   font-size: 1.2em;
