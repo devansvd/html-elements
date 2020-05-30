@@ -1,6 +1,22 @@
+<div align="center">
+<h1>Visualize Cross Browser Rendering</h1>
+
+<p>Visualize html cross browser rendering of each elements Specifically, how much space it occupies like marigin, padding, border to each html elements in different browsers :-)</p>
+</div>
+
+---
+
+<!-- prettier-ignore-start -->
+[![MIT License][license-badge]][license]
+<!-- prettier-ignore-end -->
+
 _Did you know html elements had an element named [element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference) ?_ **Well ! I didn't.**
 
-#### Frustration:
+## Demo:
+
+[Visualize Cross browser Rendering](https://devansvd.github.io/html-elements) - https://devansvd.github.io/html-elements
+
+## Frustration:
 
 - Ever wonder, when you begin writing `markup's` by skimming through the `html` docs, Oh! that's a lot of tags and faced **why the hell the height, margin-top or margin-bottom not applied to span elements ?**
 
@@ -18,7 +34,7 @@ And then feel like time to read the docs properly. _hahaha_.
 
 ---
 
-#### Questions need answers:
+## Questions need answers:
 
 - Want to know how much each browsers apply `margin`, `padding`, `borders` and how it styles the UI for a specific element.
 
@@ -26,7 +42,7 @@ And then feel like time to read the docs properly. _hahaha_.
 
 ---
 
-#### Time to overcome:
+## Time to overcome:
 
 While finally reading the docs, I was surprised to see few things I did not know before ...
 
@@ -41,20 +57,16 @@ While finally reading the docs, I was surprised to see few things I did not know
 - Tables don't have default `borders`. ew
 - `Marquee` text dance around. Interesting.
 
-![Content categories](https://dev-to-uploads.s3.amazonaws.com/i/mqwqfkmansdx1s7wt7ez.png)
+![Content categories](https://raw.githubusercontent.com/devansvd/html-elements/master/images/content-categories.png)
 
 ---
 
-#### Solution:
+## Solution:
 
 - A page to view all the element to reveal their `cross-browser` default rendering without any fancy `css`.
 - By placing `each element` Intentionally next to each other and see which are all `inline elements` ? which are all `block elements` ?
 
 ---
-
-#### Demo:
-
-[Visualize Cross browser Rendering](https://devansvd.github.io/html-elements) - https://devansvd.github.io/html-elements
 
 **Note:** Intentionally not be mobile responsive.
 
@@ -64,8 +76,18 @@ While finally reading the docs, I was surprised to see few things I did not know
 
 Mdn docs are really so good, Credits to them.
 
-I guess I could say this is an **experiment with html element**. This is my First post on [Dev.to](https://dev.to).
+I guess I could say this is an **experiment with html element**.
 
 Feel free to share your thoughts and feedback.
 
 I'm `Devan` - Aka [devansvd](https://github.com/devansvd).
+
+## License
+
+[`MIT`][license]
+
+<!-- prettier-ignore-start -->
+[license-badge]: https://img.shields.io/npm/l/eslint-config-devansvd.svg?style=flat-square
+[license]: https://github.com/devansvd/eslint-config-devansvd/blob/master/LICENSE
+<!-- prettier-ignore-end -->
+
