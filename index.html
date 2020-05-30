@@ -8,11 +8,24 @@
     </title>
     <link href="css/style.css" rel="stylesheet" />
   </head>
-  <!-- Online offline, browser compatability, no javascript enabled -->
+  <!-- Online offline, browser compatability, no javascript enabled, Favicons -->
   <body>
-    <h1 class="main-heading">Html-5 elements - Vizualize Cross Browser Rendering</h1>
+    <h1 class="main-heading">
+      Html-5 elements - Vizualize Cross Browser Rendering
+      <span class="visualize">
+        <label class="switch">
+          <input
+            type="checkbox"
+            name="border-toggler"
+            id="border-toggler"
+            onchange="onBorderToggle()"
+          />
+          <span class="slider round"></span>
+        </label>
+      </span>
+    </h1>
 
-    <p>
+    <p style="clear: both;">
       This is not suppose to be used as a reference(use
       <a
         href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference"
@@ -21,10 +34,13 @@
       >
         MDN
       </a>
-      for that), intended to vizualize cross browser rendering of each elements Specifically, how
-      much space it occupies like marigin, padding, border. Intentionally each elements placed next
-      to each other(Span tag is occupied as their heading) to see if that specific element is
-      <strong>inline or block element</strong>.
+      for that),
+      <strong>
+        Intended to vizualize default cross browser rendering of each elements Specifically, how
+        much space it occupies like marigin, padding, border.
+      </strong>
+      Intentionally each elements placed next to each other(Span tag is occupied as their heading)
+      to see if that specific element is <strong>inline or block element</strong>.
       <q>So don't think like page is not aligned properly, What the Hell ?</q>
       <strong>No Additional Margin, Padding, Border is added in-between elements.</strong>
       Grouping sub headings are fake to check their actual grouped section head to
@@ -47,86 +63,148 @@
 
     <h2 class="sub-heading">Input types:</h2>
 
-    <span class="head-el">text:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">text:</a>
+    </span>
     <input type="text" name="one" />
 
-    <span class="head-el">disabled text:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">disabled text:</a>
+    </span>
     <input type="text" name="dis" disabled />
 
-    <span class="head-el">number:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">number:</a>
+    </span>
     <input type="number" name="number" />
 
-    <span class="head-el">button:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">button:</a>
+    </span>
     <input type="button" name="two" value="Click the Button" />
 
-    <span class="head-el">checkbox:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">checkbox:</a>
+    </span>
     <input type="checkbox" id="scales" name="scales" checked />
     <label for="scales">Scales</label>
     <input type="checkbox" id="horns" name="horns" />
     <label for="horns">Horns</label>
 
-    <span class="head-el">color:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">color:</a>
+    </span>
     <input type="color" name="color" />
 
-    <span class="head-el">date:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">date:</a>
+    </span>
     <input type="date" name="date" />
 
-    <span class="head-el">datetime local:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">datetime local:</a>
+    </span>
     <input type="datetime-local" name="datetime-local" />
 
-    <span class="head-el">email:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">email:</a>
+    </span>
     <input type="email" name="email" />
 
-    <span class="head-el">file:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">file:</a>
+    </span>
     <input type="file" name="file" />
 
-    <span class="head-el">hidden:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">hidden:</a>
+    </span>
     <input type="hidden" name="hidden" />
 
-    <span class="head-el">month:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">month:</a>
+    </span>
     <input type="month" name="month" />
 
-    <span class="head-el">password:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">password:</a>
+    </span>
     <input type="password" name="password" />
 
-    <span class="head-el">radio:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">radio:</a>
+    </span>
     <input type="radio" id="huey" name="drone" value="huey" checked />
     <label for="huey">Huey</label>
     <input type="radio" id="dewey" name="drone" value="dewey" />
     <label for="dewey">Dewey</label>
 
-    <span class="head-el">range:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">range:</a>
+    </span>
     <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="50" />
 
-    <span class="head-el">reset:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">reset:</a>
+    </span>
     <input type="reset" value="Reset" />
 
-    <span class="head-el">search:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">search:</a>
+    </span>
     <input type="search" name="search" />
 
-    <span class="head-el">submit:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">submit:</a>
+    </span>
     <input type="submit" value="Click to Submit" />
 
-    <span class="head-el">tel:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">tel:</a>
+    </span>
     <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
 
-    <span class="head-el">time:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">time:</a>
+    </span>
     <input type="time" name="time" />
 
-    <span class="head-el">url:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">url:</a>
+    </span>
     <input type="url" name="url" placeholder="https://example.com" pattern="https://.*" />
 
-    <span class="head-el">week:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">week:</a>
+    </span>
     <input type="week" name="week" />
     <br />
-    <span class="head-el">image:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">image:</a>
+    </span>
     <input type="image" alt="Login" width="100" src="images/login-button.png" />
 
     <h2 class="sub-heading">Form elements:</h2>
-    <span class="head-el">button element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        button element:
+      </a>
+    </span>
     <button name="button">Click the button</button>
     <!-- input type button, form element-->
-    <span class="head-el">datalist element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        datalist element:
+      </a>
+    </span>
     <input list="browsers" id="myBrowser" name="myBrowser" />
     <datalist id="browsers">
       <option value="Chrome"> </option>
@@ -137,7 +215,15 @@
       <option value="Microsoft Edge"> </option>
     </datalist>
 
-    <span class="head-el">fieldset element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        fieldset element:
+      </a>
+    </span>
     <fieldset>
       <legend>Choose your favorite monster</legend>
       <input type="radio" id="kraken" name="monster" />
@@ -150,29 +236,72 @@
       <label for="mothman">Mothman</label>
     </fieldset>
 
-    <span class="head-el">label element:</span>
+    <span class="head-el">
+      <a href="http://" target="_blank" rel="noopener noreferrer">label element:</a>
+    </span>
     <label>Do you like cheese?</label>
 
-    <span class="head-el">legend element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        legend element:
+      </a>
+    </span>
     <legend>Choose your favorite monster</legend>
 
-    <span class="head-el">form element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        form element:
+      </a>
+    </span>
     <form action="" method="get">
       Form element represents a document section containing interactive controls for submitting
       information.
     </form>
 
-    <span class="head-el">textarea element:</span>
-    <textarea rows="5">
-    textarea element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        textarea element:
+      </a>
+    </span>
+    <textarea>
+    textarea element represents a multi-line plain-text editing control, useful when you want to allow users to
+    enter a sizeable amount of free-form text, for example a comment on a review or feedback form
     </textarea>
 
-    <span class="head-el">meter element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        meter element:
+      </a>
+    </span>
     <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">
       At 50/100
     </meter>
 
-    <span class="head-el">select, options elements:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        select, options elements:
+      </a>
+    </span>
     <select>
       <option>Tyrannosaurus</option>
       <option>Velociraptor</option>
@@ -182,7 +311,15 @@
       <option>Apatosaurus</option>
     </select>
 
-    <span class="head-el">select with optgroup elements:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        select with optgroup elements:
+      </a>
+    </span>
     <select>
       <optgroup label="Theropods">
         <option>Tyrannosaurus</option>
@@ -196,111 +333,351 @@
       </optgroup>
     </select>
 
-    <span class="head-el">output element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        output element:
+      </a>
+    </span>
     <output>Output = 60</output>
 
-    <span class="head-el">progress element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        progress element:
+      </a>
+    </span>
     <progress max="100" value="70"> 70% </progress>
 
     <h2 class="sub-heading">Inline Elements:</h2>
 
-    <span class="head-el">a element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        a element:
+      </a>
+    </span>
     <a href="https://www.netlify.com">
       Netlify
     </a>
 
-    <span class="head-el">abbr element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        abbr element:
+      </a>
+    </span>
     <abbr title="Laugh Out Loud">LOL</abbr>
 
-    <span class="head-el">b element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        b element:
+      </a>
+    </span>
     <span>b element is known as <b>Bring attention to element</b> </span>
 
-    <span class="head-el">bdi element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        bdi element:
+      </a>
+    </span>
     <bdi>الرجل القوي إيان</bdi>
 
-    <span class="head-el">bdo element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        bdo element:
+      </a>
+    </span>
     <bdo dir="rtl">This text will go right to left.</bdo>
 
-    <span class="head-el">br element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        br element:
+      </a>
+    </span>
     <br />
 
-    <span class="head-el">cite element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        cite element:
+      </a>
+    </span>
     <cite>
       Nineteen Eighty-Four by George Orwell (Part 1, Chapter 1)
     </cite>
 
-    <span class="head-el">code element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        code element:
+      </a>
+    </span>
     <code>[1,2,3,4].push()</code>
 
-    <span class="head-el">data element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        data element:
+      </a>
+    </span>
     <data value="Ketchup">Mini Ketchup</data>
 
-    <span class="head-el">dfn element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        dfn element:
+      </a>
+    </span>
     <span>
       The (<dfn>&lt;dfn&gt;</dfn>) - definition.
     </span>
 
-    <span class="head-el">em element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        em element:
+      </a>
+    </span>
     <span>
       In html 5, what was previously called <em>block-level</em> content is now called
       <em>flow</em> content.
     </span>
 
-    <span class="head-el">em element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        i element:
+      </a>
+    </span>
     <span>
       The Latin phrase <i>Veni, vidi, vici</i> is often mentioned in music, art, and literature.
     </span>
 
-    <span class="head-el">kbd element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        kbd element:
+      </a>
+    </span>
     <span> Terminal magic press <kbd>Ctrl</kbd> + <kbd>r</kbd></span>
 
-    <span class="head-el">mark element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        mark element:
+      </a>
+    </span>
     <span>Mark my <mark>words</mark></span>
 
-    <span class="head-el">q element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        q element:
+      </a>
+    </span>
     <span>The <q>Inline Quotation</q> element</span>
 
-    <span class="head-el">s element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        s element:
+      </a>
+    </span>
     <s>Strike me through.</s>
 
-    <span class="head-el">samp element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        samp element:
+      </a>
+    </span>
     <samp>Keyboard not found, Press F1 to continue. Ouch!!!</samp>
 
-    <span class="head-el">small element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        small element:
+      </a>
+    </span>
     <small>This whole sentence is in small letters.</small>
 
-    <span class="head-el">span element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        span element:
+      </a>
+    </span>
     <span>Some text inside span</span>
 
-    <span class="head-el">strong element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        strong element:
+      </a>
+    </span>
     <span><strong>Important:</strong> Before proceeding, make sure you add plenty of butter.</span>
 
-    <span class="head-el">sub element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        sub element:
+      </a>
+    </span>
     <span>C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub></span>
 
-    <span class="head-el">sup element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        sup element:
+      </a>
+    </span>
     <span>a<sup>2</sup>+ b<sup>2</sup> = c<sup>2</sup></span>
 
-    <span class="head-el">time element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        time element:
+      </a>
+    </span>
     <time datetime="2018-07-07T20:00:00">20:00</time>
 
-    <span class="head-el">u element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        u element:
+      </a>
+    </span>
     <span>This sentence has <u class="spelling">wrnogly</u> spelled word.</span>
 
-    <span class="head-el">var element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        var element:
+      </a>
+    </span>
     <var>l</var> × <var>w</var> × <var>h</var>
 
-    <span class="head-el">wbr element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        wbr element:
+      </a>
+    </span>
     <span>Reallylongword<wbr />wbronlyeffect<wbr />setting<wbr />width</span>
 
-    <span class="head-el">rb, rp, rt elements:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rb"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        rb, rp, rt elements:
+      </a>
+    </span>
     <!-- prettier-ignore -->
     <ruby>
       <rb>漢<rb>字
       <rp>(</rp><rt>kan<rt>ji<rp>)</rp>
     </ruby>
 
-    <span class="head-el">ruby, rtc elements:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ruby, rtc elements:
+      </a>
+    </span>
     <!-- prettier-ignore -->
     <ruby>
       <rbc>
@@ -313,25 +690,65 @@
 
     <h2 class="sub-heading">Special Elements:</h2>
 
-    <span class="head-el">audio element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        audio element:
+      </a>
+    </span>
     <audio controls src="audios/t-rex-roar.mp3">
       Your browser does not support the
       <code>audio</code> element.
     </audio>
 
-    <span class="head-el">img element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        img element:
+      </a>
+    </span>
     <img src="images/clock-demo-400px.png" width="150px" alt="Clock" />
 
-    <span class="head-el">video, track elements:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        video, track elements:
+      </a>
+    </span>
     <video controls width="250" src="videos/friday.mp4">
       <track default kind="captions" srclang="en" src="videos/friday.vtt" />
       Sorry, your browser doesn't support embedded videos.
     </video>
 
-    <span class="head-el">embed element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        embed element:
+      </a>
+    </span>
     <embed type="video/webm" src="videos/flower.webm" width="250" height="200" title="Flower" />
 
-    <span class="head-el">map, area elements:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        map, area elements:
+      </a>
+    </span>
     <img src="images/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379" />
     <map name="workmap">
       <area
@@ -357,36 +774,92 @@
       />
     </map>
 
-    <span class="head-el">Iframe element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Iframe element:
+      </a>
+    </span>
     <iframe title="Current page" width="300" height="200" src="/"> </iframe>
 
-    <span class="head-el">Object, param elements(pdf):</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Object, param elements(pdf):
+      </a>
+    </span>
     <object type="application/pdf" data="pdfs/sample.pdf" width="250" height="200">
       <param name="foo" value="bar" />
     </object>
 
-    <span class="head-el">Canvas element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Canvas element:
+      </a>
+    </span>
     <canvas id="canvas" width="150" height="150">
       An alternative text describing what your canvas displays.
     </canvas>
 
-    <span class="head-el">Picture, Source elements:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Picture, Source elements:
+      </a>
+    </span>
     <picture>
       <source srcset="images/surfer-240-200.jpg" media="(min-width: 800px)" />
       <img src="images/surfer-240-200.jpg" alt="surfer" />
     </picture>
 
-    <span class="head-el">noscript element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        noscript element:
+      </a>
+    </span>
     <noscript>
       Javascript Disabled!
     </noscript>
     <span>Javascript Enabled!</span>
 
-    <span class="head-el">del, ins element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        del, ins element:
+      </a>
+    </span>
     <del>text deleted</del> <ins>text inserted</ins>
 
     <h2 class="sub-heading">Block Elements:</h2>
-    <span class="head-el">Address element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        address element:
+      </a>
+    </span>
     <address>
       You can contact author at www.somedomain.com.<br />
       If you see any bugs, please contact webmaster.<br />
@@ -396,46 +869,110 @@
       Mountain View, CA 94041<br />
       USA
     </address>
-    <span class="head-el">Article element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        article element:
+      </a>
+    </span>
     <article>
       Article element represents a self-contained composition in a document, page, application, or
       site, which is intended to be independently distributable or reusable (e.g., in syndication).
       Examples include: a forum post, a magazine or newspaper article, or a blog entry.
     </article>
-    <span class="head-el">Aside element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        aside element:
+      </a>
+    </span>
     <aside>
       Aside element represents a portion of a document whose content is only indirectly related to
       the document's main content. Asides are frequently presented as sidebars or call-out boxes.
     </aside>
-    <span class="head-el">Footer element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        footer element:
+      </a>
+    </span>
     <footer>
       Some &copy; Copyright 2020, All Rights Reserved.
     </footer>
-    <span class="head-el">Header element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        header element:
+      </a>
+    </span>
     <header>
       Header element represents introductory content, typically a group of introductory or
       navigational aids. It may contain some heading elements but also a logo, a search form, an
       author name, and other elements.
     </header>
-    <span class="head-el">h1 h2 h3 h4 h5 h6 elements:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        h1 h2 h3 h4 h5 h6 elements:
+      </a>
+    </span>
     <h1>Heading level 1</h1>
     <h2>Heading level 2</h2>
     <h3>Heading level 3</h3>
     <h4>Heading level 4</h4>
     <h5>Heading level 5</h5>
     <h6>Heading level 6</h6>
-    <span class="head-el">Hgroup element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        hgroup element:
+      </a>
+    </span>
     <hgroup>
       <h4>HTML</h4>
       <h5>Living Standard — Last Updated 12 August 2016</h5>
     </hgroup>
-    <span class="head-el">Main element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        main element:
+      </a>
+    </span>
     <main>
       Main element represents the dominant content of the body of a document. The main content area
       consists of content that is directly related to or expands upon the central topic of a
       document, or the central functionality of an application.
     </main>
-    <span class="head-el">Nav element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        nav element:
+      </a>
+    </span>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -443,19 +980,43 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-    <span class="head-el">Section element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        section element:
+      </a>
+    </span>
     <section>
       Section element represents a standalone section — which doesn't have a more specific semantic
       element to represent it — contained within an HTML document. Typically, but not always,
       sections have a heading.
     </section>
-    <span class="head-el">Blockquote element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Blockquote element:
+      </a>
+    </span>
     <blockquote>
       It's not who I am underneath, but what I do that defines me. —Batman Begins, 2005. <br />
       Words can be like X-rays, if you use them properly—they’ll go through anything. You read and
       you’re pierced. —Aldous Huxley, Brave New World.
     </blockquote>
-    <span class="head-el">dl, dt, dd, elements:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        dl, dt, dd, elements:
+      </a>
+    </span>
     <dl>
       <dt>Beast of Bodmin</dt>
       <dd>A large feline inhabiting Bodmin Moor.</dd>
@@ -466,12 +1027,28 @@
       <dt>Owlman</dt>
       <dd>A giant owl-like creature.</dd>
     </dl>
-    <span class="head-el">div element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        div element:
+      </a>
+    </span>
     <div>
       Content Division element (div) is the generic container for flow content. It has no effect on
       the content or layout until styled using CSS.
     </div>
-    <span class="head-el">Figure, Figcaption elements:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Figure, Figcaption elements:
+      </a>
+    </span>
     <figure>
       <img src="./images/figure-figcaption.png" alt="Usage of Figure and figcaption" />
       <figcaption>
@@ -480,9 +1057,25 @@
         caption, and its contents are referenced as a single unit.
       </figcaption>
     </figure>
-    <span class="head-el">hr element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        hr element:
+      </a>
+    </span>
     <hr />
-    <span class="head-el">Ul, li (Unordered list) elements:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Ul, li (Unordered list) elements:
+      </a>
+    </span>
     <ul>
       <li>Neil Armstrong</li>
       <li>Alan Bean</li>
@@ -494,7 +1087,15 @@
       <li>Edgar Mitchell</li>
       <li>Alan Shepard</li>
     </ul>
-    <span class="head-el">Ol, li (Ordered list) elements:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Ol, li (Ordered list) elements:
+      </a>
+    </span>
     <ol>
       <li>Mix flour, baking powder, sugar, and salt.</li>
       <li>In another bowl, mix eggs, milk, and oil.</li>
@@ -506,13 +1107,29 @@
       <li>Fill muffin tray 3/4 full.</li>
       <li>Bake for 20 minutes.</li>
     </ol>
-    <span class="head-el">p element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        p element:
+      </a>
+    </span>
     <p>
       p element represents a paragraph. Paragraphs are usually represented in visual media as blocks
       of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML
       paragraphs can be any structural grouping of related content, such as images or form fields.
     </p>
-    <span class="head-el">pre element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        pre element:
+      </a>
+    </span>
     <!-- prettier-ignore -->
     <pre>
       ___________________________
@@ -525,11 +1142,17 @@
                      ||     ||
     </pre>
 
-    <hr />
-
     <h2 class="sub-heading">Table Elements:</h2>
 
-    <span class="head-el">table with caption, tr, th, td elements:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        table with caption, tr, th, td elements:
+      </a>
+    </span>
     <table>
       <caption>
         Example Caption
@@ -548,7 +1171,15 @@
       </tr>
     </table>
 
-    <span class="head-el">table with col, colgroup elements:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        table with col, colgroup elements:
+      </a>
+    </span>
     <table>
       <colgroup>
         <col />
@@ -571,7 +1202,15 @@
       </tr>
     </table>
 
-    <span class="head-el">table with thead, tbody elements:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        table with thead, tbody elements:
+      </a>
+    </span>
     <table>
       <thead>
         <tr>
@@ -607,8 +1246,16 @@
 
     <h2 class="sub-heading">Interactive elements:</h2>
 
-    <span class="head-el">details, summary elements:</span>
-    <details>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        details, summary elements:
+      </a>
+    </span>
+    <details open>
       <summary>System Requirements</summary>
       Requires a computer running an operating system. The computer must have some memory and
       ideally some kind of long-term storage. An input device as well as some form of output device
@@ -617,7 +1264,15 @@
       summary element.
     </details>
 
-    <span class="head-el">menu element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        menu element:
+      </a>
+    </span>
     <menu>
       <menuitem>Action</menuitem>
       <menuitem>Another action</menuitem>
@@ -625,69 +1280,167 @@
       <menuitem>Separated action</menuitem>
     </menu>
 
-    <span class="head-el">dialog element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        dialog element:
+      </a>
+    </span>
     <dialog open>
       Grettings To everyone ! I'm a dialogue element with open attribute
     </dialog>
 
     <h2 class="sub-heading">Web components:</h2>
 
-    <span class="head-el">slot element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        slot element:
+      </a>
+    </span>
     <slot name="attributes">
       Slot element—part of the Web Components technology suite—is a placeholder inside a web
       component that you can fill with your own markup, which lets you create separate DOM trees and
       present them together.
     </slot>
 
-    <span class="head-el">template element (Can be rendered via js):</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        template element (Can be rendered via js):
+      </a>
+    </span>
     <template>
       element is a mechanism for holding HTML that is not to be rendered immediately when a page is
       loaded but may be instantiated subsequently during runtime using JavaScript.
     </template>
 
     <h2 class="sub-heading">Deprecated elements:</h2>
+
     <h3 class="sub-3-heading">
       Intentionally not added elements - basefont, bgsound, command, content, dir, element, font,
       frame, frameset, image, isindex, keygen, listing, menuitem, multicol, nextid, nobr, noembed,
       noframes, plaintext, shadow, spacer, xmp
     </h3>
-    <span class="head-el">acronym element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/acronym"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        acronym element:
+      </a>
+    </span>
     <acronym title="World Wide Web">WWW</acronym>
 
-    <span class="head-el">applet element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/applet"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        applet element:
+      </a>
+    </span>
     <applet code="game.class" align="left" archive="game.zip" height="250" width="350">
       <param name="difficulty" value="easy" />
       <b>Sorry, you need Java to play this game.</b>
     </applet>
 
-    <span class="head-el">big element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/big"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        big element:
+      </a>
+    </span>
     <big>This whole sentence is in bigger letters.</big>
 
-    <span class="head-el">blink element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        blink element:
+      </a>
+    </span>
     <blink>Why would somebody use this?</blink>
 
-    <span class="head-el">center element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/center"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        center element:
+      </a>
+    </span>
     <center>This text inside center element will be centered.</center>
 
-    <span class="head-el">marquee element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        marquee element:
+      </a>
+    </span>
     <marquee>This text will scroll from right to left</marquee>
 
-    <span class="head-el">marquee with behavior element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        marquee with behavior element:
+      </a>
+    </span>
     <marquee direction="down" width="250" height="200" behavior="alternate" style="border: solid;">
       <marquee behavior="alternate">
         This text will bounce
       </marquee>
     </marquee>
 
-    <span class="head-el">strike element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strike"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        strike element:
+      </a>
+    </span>
     <strike>Today's Special: Salmon</strike>
 
-    <span class="head-el">tt element:</span>
+    <span class="head-el">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tt"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        tt element:
+      </a>
+    </span>
     <tt>
       tt element creates inline text which is presented using the user agent's default monospace
       font face.
     </tt>
 
+    <hr />
     <p style="text-align: center;">
       =================================== THE END ============================================
     </p>
@@ -811,6 +1564,10 @@
 
     <h2 class="sub-heading">References:</h2>
     <ul>
+      <li>
+        All the contents like Images, Pictures, Videos, Audios, Pdf's, subtitle text's are from MDN
+        documentation and html spec
+      </li>
       <li>
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference"
