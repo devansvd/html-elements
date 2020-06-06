@@ -1770,6 +1770,51 @@
 
     <object width="1000" height="288" data="./images/content-venn.svg"></object>
 
+    <section>
+      <h2 class="sub-heading">The Box Model: (content-box model by default in all browsers)</h2>
+      <p>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Box:</a
+        >
+        To Vizualize <strong>content-box model</strong> and <strong>border-box model</strong>
+      </p>
+
+      <pre style="border: 1px solid #ddd; padding: 20px;">
+        .box {
+          border: 5px solid rebeccapurple;
+          background-color: lightgray;
+          padding: 40px;
+          margin: 40px;
+          width: 300px;
+          height: 150px;
+        }
+      </pre>
+
+      <span style="color: red;">
+        Total width: content width + padding-left + padding-right + border-left + border-right,
+      </span>
+      <span style="color: red;">
+        Total height: content height + padding-top + padding-bottom + border-top + border-bottom
+      </span>
+      <div class="box">
+        I use the standard box model.
+        <br />
+        Total: 390 X 240 px
+      </div>
+
+      <span style="color: red;">Total width: content width ,</span>
+      <span style="color: red;">Total height: content height</span>
+
+      <div class="box alternate">
+        I use the border-box model. exactly: 300 X 150 px
+      </div>
+
+      <p>It first applies the width and height of the box, then it apply border, padding, margin</p>
+    </section>
+
     <h2 class="sub-heading">References:</h2>
     <ul>
       <li>
